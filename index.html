@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div data-modal class="modal is-hidden">
+      <div class="inner-modal">
+        <button data-modal-close class="modal-button">
+          <svg height="11px" height="11px">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="form-title">Leave your information and we'll call you back</h2>
+        <form class="form-inner" name="contact-form">
+          <label class="form-items name-svg">
+            Name
+            <input class="form-input" type="text" name="name">
+            <svg class="icon-modal" height="12" width="12">
+              <use href="./images/symbol-defs.svg#name" ></use>
+            </svg>
+          </label>
+          <label class="form-items telephone-svg">
+            Telephone
+            <input class="form-input" type="tel" name="telephone">
+            <svg  class="icon-modal"  height="13" width="13">
+              <use href="./images/symbol-defs.svg#tel" ></use>
+            </svg>
+          </label>
+          <label class="form-items mail-svg">
+            E-mail
+            <input class="form-input" type="mail" name="mail">
+            <svg  class="icon-modal"  height="12" width="15">
+              <use href="./images/symbol-defs.svg#mail" ></use>
+            </svg>
+          </label>
+          <label class="form-items">
+            Comments
+            <textarea class="comments-inner" placeholder="Enter the text" name="comments"></textarea>
+          </label>
+          <label class="form-items-terms">
+              <input type="checkbox">
+              <span class="replace-checkbox">
+                 <svg class="therms-svg">
+                    <use href="./images/symbol-defs.svg#icon-therm" ></use>
+                 </svg>
+               </span>
+              I agree with the letter and accept the<a class="term-link" href="#">Terms and Conditions</a>
+          </label>
+          <button class="send-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <!--Header-->
+      <header class="page-header">
+        <div class="container-inner">
+          <nav class="header-navigation">
+            <a class="logo" href="/">Web</a>
+            <ul class="navigation-list" class="unstyled-list">
+              <li class="nav-list-item">
+                <a class="hover-part list-a active-link" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="hover-part list-a" href="./portofolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a class="hover-part list-a" href="#">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="right-navigation unstyled-list">
+              <li class="contact-list-item">
+                <a class="header-icons" href="#">
+                  <svg class="svg-header hover-part" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                </a>
+                <a class="hover-part" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-list-item">
+                <a class="header-icons" href="#">
+                  <svg class="svg-header hover-part" width="10" height="16">
+                    <use href="./images/symbol-defs.svg#icon-telefon"></use>
+                  </svg>
+                </a>
+                <a class="hover-part phone-number" href="tel:+12127724150"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!--Hero Section-->
+        <section class="hero-section">
+          <div class="container-inner">
+            <div class="hero">
+              <h1 class="main-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+              <button data-modal-open class="button-style">Request our service</button>
+            </div>
+          </div>
+        </section>
+        <!--Middle Section-->
+        <section class="middle-section">
+          <div class="container-inner">
+            <ul class="unstyled-list middle-icons">
+              <li>
+                <a class="backgound-mid-icons" href="#">
+                  <svg height="70" width="65.31">
+                    <use
+                      class="hover-part"
+                      href="./images/symbol-defs.svg#icon-antenna-1-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="backgound-mid-icons" href="#">
+                  <svg height="70" width="66.90">
+                    <use
+                      href="./images/symbol-defs.svg#icon-clock-1-1-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="backgound-mid-icons" href="#">
+                  <svg height="53,69" width="70">
+                    <use
+                      href="./images/symbol-defs.svg#icon-diagram-1-1-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="backgound-mid-icons" href="#">
+                  <svg height="60.66" width="54.83">
+                    <use
+                      href="./images/symbol-defs.svg#icon-astronaut-1-1-2"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="container-inner">
+            <ul class="unstyled-list text-section-list">
+              <li class="mid-section-list">
+                <h3 class="subtitle-section">ATTENTION TO DETAILS</h3>
+                <p class="text-section">
+                  We go into all the details and processes <br />
+                  of your business to<br />
+                  develop a customized solution.
+                </p>
+              </li>
+              <li class="mid-section-list">
+                <h3 class="subtitle-section">PUNCTUALITY</h3>
+                <p class="text-section">
+                  With us, you can feel safe and secure.<br />
+                  An important principle of the company:<br />
+                  respect your time and deadlines.
+                </p>
+              </li>
+              <li class="mid-section-list">
+                <h3 class="subtitle-section">PLANNING</h3>
+                <p class="text-section">
+                  You will be able to observe and <br />
+                  participate in every phase of solution <br />development and
+                  implementation.
+                </p>
+              </li>
+              <li class="mid-section-list">
+                <h3 class="subtitle-section">MODERN TECHNOLOGIES</h3>
+                <p class="text-section">
+                  We use innovative tools to solve<br />
+                  assigned tasks. It's time to simplify work<br />
+                  processes.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--Our Work Section-->
+        <section class="ourwork-section">
+          <div class="container-inner">
+            <h2 class="title-section">What we do</h2>
+            <ul class="unstyled-list our-work-images">
+              <li class="images-section">
+                <img
+                  width="370"
+                  src="./images/Gadgeturi (1).jpg"
+                  alt="Gadgeturi 1"
+                />
+                <p class="ourwork-text">DESKTOP APPS</p>
+              </li class="images-section">
+              <li>
+                <img
+                  width="370"
+                  src="./images/Gadgeturi (2).jpg"
+                  alt="Gadgeturi 2"
+                />
+                <p class="ourwork-text">Mobile APPS</p>
+              </li>
+              <li class="images-section">
+                <img
+                  width="370"
+                  src="./images/Gadgeturi (3).jpg"
+                  alt="Gadgeturi  3"
+                />
+                <p class="ourwork-text">DESIGN SOLUTIONS</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--Our Time Section-->
+        <section class="ourtime-section">
+          <div class="container-inner">
+            <h2 class="title-section">Our Team</h2>
+            <ul class="unstyled-list our-time-images">
+              <li class="box-section">
+                <img
+                  width="270"
+                  src="./images/teme members (1).jpg"
+                  alt="Christopher Walker"
+                />
+                <h3 class="name-section name">Christopher Walker</h3>
+                <p class="role-section">Product Designer</p>
+                <div class="socialmedia-icon-ourtime">
+                  <ul class="unstyled-list ul-icons-ourtime">
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-instagram-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="16.25px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-twitter-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-facebook-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-linkedin-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="box-section">
+                <img
+                  width="270"
+                  src="./images/teme members (2).jpg"
+                  alt="Kylie Evans"
+                />
+                <h3 class="name-section">Kylie Evans</h3>
+                <p class="role-section">Frontend Developer</p>
+                <div class="socialmedia-icon-ourtime">
+                  <ul class="unstyled-list ul-icons-ourtime">
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-instagram-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="16.25px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-twitter-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-facebook-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-linkedin-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="box-section">
+                <img
+                  width="270"
+                  src="./images/teme members (3).jpg"
+                  alt="Ryan Harris"
+                />
+                <h3 class="name-section name">Ryan Harris</h3>
+                <p class="role-section">Marketing</p>
+                <div class="socialmedia-icon-ourtime">
+                  <ul class="unstyled-list ul-icons-ourtime">
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-instagram-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="16.25px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-twitter-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-facebook-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-linkedin-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="box-section">
+                <img
+                  width="270"
+                  src="./images/teme members (4).jpg"
+                  alt="Tyler Moore"
+                />
+                <h3 class="name-section name">Tyler Moore</h3>
+                <p class="role-section">UI Designer</p>
+                <div class="socialmedia-icon-ourtime">
+                  <ul class="unstyled-list ul-icons-ourtime">
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-instagram-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="16.25px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-twitter-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-facebook-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="backgound-ourtime-icons" href="#">
+                        <svg width="20px" height="20px">
+                          <use
+                            href="./images/symbol-defs.svg#icon-linkedin-1"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--Regular Customers-->
+        <section>
+          <div class="container-inner">
+            <h2 class="title-section">Regular Customers</h2>
+            <div class="regular-customers">
+              <ul class="unstyled-list regular-icons">
+                <li>
+                  <a class="backgrouns-regular-icons" href="#">
+                    <svg height="46.7" width="41">
+                      <use href="./images/symbol-defs.svg#icon-group-5"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="backgrouns-regular-icons" href="#">
+                    <svg height="52" width="42">
+                      <use href="./images/symbol-defs.svg#icon-group-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="backgrouns-regular-icons" href="#">
+                    <svg height="41.18" width="43.46">
+                      <use href="./images/symbol-defs.svg#icon-group-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="backgrouns-regular-icons" href="#">
+                    <svg height="40.62" width="84.44">
+                      <use href="./images/symbol-defs.svg#icon-group-3"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="backgrouns-regular-icons" href="#">
+                    <svg height="62.54" width="62.54">
+                      <use href="./images/symbol-defs.svg#icon-group-4"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="backgrouns-regular-icons" href="#">
+                    <svg height="43.93" width="93.79">
+                      <use href="./images/symbol-defs.svg#icon-group"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--Footer-->
+      <footer class="footer-section">
+        <div class="container-inner">
+          <address class="adress-container">
+            <div class="footer-list-1">
+              <a class="logo-2" href="./index.html">Web</a>
+              <ul class="unstyled-list adress-list">
+                <li>
+                  <a
+                    class="hover-part adress-section"
+                    href="695 Park Ave, NY 10065, USA"
+                    >695 Park Ave, NY 10065, USA</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover-part mail-section"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="hover-part tel-section" href="tel:+12127724150"
+                    >+1 212-772-4150</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-list-2">
+              <h3 class="footer-right-title">FIND US ON</h3>
+              <ul class="unstyled-list footer-right">
+                <li>
+                  <a class="background-footer-icons" href="#">
+                    <svg hight="20" width="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram-1"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="background-footer-icons" href="#">
+                    <svg hight="16.25" width="20">
+                      <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="background-footer-icons" href="#">
+                    <svg hight="20" width="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook-1"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="background-footer-icons" href="#">
+                    <svg hight="20" width="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin-1"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+                <div class="footer-list-3">
+                  <h3 class="subscribe-title">Subscribe to the newsletter</h3>
+                  <form name="subscribe-forms">
+                    <input class="input-footer" type="mail" name="mail-footer" placeholder="E-mail">
+                     <button  class="footer-botton"type="submit">Subscribe
+                      <svg  class="svg-footer" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#footer-icon"></use>
+                      </svg>
+                     </button>
+                  </form>
+                </div>
+            </div>
+          </address>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
